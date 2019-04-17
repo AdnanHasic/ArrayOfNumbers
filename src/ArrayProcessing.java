@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class ArrayProcessing {
 
@@ -79,7 +80,8 @@ public class ArrayProcessing {
 
 		int counterRepetitiveNumbers = 0;
 		int counterUniqueNumbers = 0;
-
+		
+		System.out.print("The unique numbers are : ");
 		for (int i = 0; i < array.length; i++) {
 			counterRepetitiveNumbers = 0;
 			for (int j = 0; j < array.length; j++) {
@@ -88,13 +90,27 @@ public class ArrayProcessing {
 				}
 			}
 			if (counterRepetitiveNumbers == 1) {
-				System.out.println("The unique numbers are : ");
-				System.out.print(array[i] + " ");
-				counterRepetitiveNumbers++;
+			
+				System.out.print(array[i] + " , ");
+				
+				counterUniqueNumbers++;
 			}
 		}
 		if (counterUniqueNumbers == 0) {
 			System.out.println("The array does not have unique numbers !");
+		}
+	}
+	
+	public void sortArray () {
+		
+		System.out.println();
+		
+		Arrays.sort(array);
+		
+		System.out.print("Sort an array : ");
+		
+		for (int browser : array) {
+			System.out.print(browser + " , ");
 		}
 	}
 }

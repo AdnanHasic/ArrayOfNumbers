@@ -13,6 +13,7 @@ public class ArrayOfNumbers {
 		arrayProcessing.theLargestNumberinanArray();
 		arrayProcessing.sumAndAverageOfarray();
 		arrayProcessing.uniqueNumbers();
+		arrayProcessing.sortArray();
 
 	}
 
