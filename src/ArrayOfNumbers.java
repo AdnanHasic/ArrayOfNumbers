@@ -10,6 +10,7 @@ public class ArrayOfNumbers {
 
 		arrayProcessing.setArray(arrayProcessing.createArrayOfNumbers());
 		arrayProcessing.theSamllestNumberInAnArray();
+		arrayProcessing.theLargestNumberinanArray();
 
 	}
 

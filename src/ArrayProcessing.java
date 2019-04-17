@@ -46,4 +46,18 @@ public class ArrayProcessing {
 
 	}
 
+	public void theLargestNumberinanArray() {
+
+		int max = Integer.MIN_VALUE;
+
+		for (int i = 0; i < array.length; i++) {
+
+			if (array[i] > max) {
+				max = array[i];
+			}
+		}
+		System.out.println("The largest number in an array is : " + max);
+
+	}
+
 }
