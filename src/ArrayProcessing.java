@@ -60,7 +60,7 @@ public class ArrayProcessing {
 
 	}
 
-	public void sumOfarray() {
+	public void sumAndAverageOfarray() {
 
 		int sum = 0;
 
@@ -69,7 +69,32 @@ public class ArrayProcessing {
 			sum += array[i];
 
 		}
+		double average = ((double) sum / array.length);
 		System.out.println("The sum of all the elements in an array : " + sum);
+		System.out.println("The average of all the numbers in an array : " + average);
+
 	}
 
+	public void uniqueNumbers() {
+
+		int counterRepetitiveNumbers = 0;
+		int counterUniqueNumbers = 0;
+
+		for (int i = 0; i < array.length; i++) {
+			counterRepetitiveNumbers = 0;
+			for (int j = 0; j < array.length; j++) {
+				if (array[i] == array[j]) {
+					counterRepetitiveNumbers++;
+				}
+			}
+			if (counterRepetitiveNumbers == 1) {
+				System.out.println("The unique numbers are : ");
+				System.out.print(array[i] + " ");
+				counterRepetitiveNumbers++;
+			}
+		}
+		if (counterUniqueNumbers == 0) {
+			System.out.println("The array does not have unique numbers !");
+		}
+	}
 }

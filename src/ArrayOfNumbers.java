@@ -11,7 +11,8 @@ public class ArrayOfNumbers {
 		arrayProcessing.setArray(arrayProcessing.createArrayOfNumbers());
 		arrayProcessing.theSamllestNumberInAnArray();
 		arrayProcessing.theLargestNumberinanArray();
-		arrayProcessing.sumOfarray();
+		arrayProcessing.sumAndAverageOfarray();
+		arrayProcessing.uniqueNumbers();
 
 	}
 
